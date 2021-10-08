@@ -8,5 +8,10 @@ namespace CoverReport.Services
         {
             return 1;
         }
+
+        public int B()
+        {
+            return 2;
+        }
     }
 }
