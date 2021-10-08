@@ -23,7 +23,7 @@ jobs:
         - name: Test
           run: 
             dotnet test test/CoverReport.A.Tests/CoverReport.A.Tests.csproj /p:CollectCoverage=true \
-            #/p:ExcludeByAttribute="CompilerGeneratedAttribute" \
+            /p:ExcludeByAttribute="CompilerGeneratedAttribute" \
             #/p:Exclude='[*.Tests.*]*' \
             #/p:CoverletOutput='../results/' \
             #/p:CoverletOutputFormat=lcov%2cjson
