@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CoverReport.Services\CoverReport.Services.csproj" />
+    <ProjectReference Include="..\..\src\CoverReport.Services\CoverReport.Services.csproj" />
   </ItemGroup>
 
 </Project>
