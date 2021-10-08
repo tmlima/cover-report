@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EC882AFE-A729-49B6-9996-C8D32D74C38A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoverReport.Services", "CoverReport.Services\CoverReport.Services.csproj", "{2B612FB9-6FF6-4809-813B-B9779117BFF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoverReport.Services", "CoverReport.Services\CoverReport.Services.csproj", "{2B612FB9-6FF6-4809-813B-B9779117BFF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B022FB77-B4F8-483D-875C-1168A4A4CDEE}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\cover-report.yml = .github\workflows\cover-report.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
