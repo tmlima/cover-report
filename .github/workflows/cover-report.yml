@@ -28,7 +28,7 @@ jobs:
             /p:CoverletOutputFormat=lcov%2cjson
             #/p:MergeWith='../results/coverage.json' \
         - name: Code coverage to Coveralls
-          uses: /coverallsapp/github-action?@master
+          uses: coverallsapp/github-action@master
           with:
             github-token: TzbZN58vs7nfWE4d9oB7ypq1CQsioBZwJ
             path-to-lcov: tests/results/coverage.info
