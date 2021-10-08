@@ -21,7 +21,18 @@ jobs:
         - name: Build
           run: dotnet build --no-restore
         - name: Test
-          run: dotnet test /p:CollectCoverage=true
+          run: 
+            dotnet test /p:CollectCoverage=true
+            /p:ExcludeByAttribute="CompilerGeneratedAttribute" \
+            /p:Exclude='[*.Tests.*]*' \
+            /p:MergeWith='../results/coverage.json' \
+            /p:CoverletOutput='../results/' \
+            /p:CoverletOutputFormat=lcov%2cjson
+        - name: Code coverage to Coveralls
+          uses: coverallsapp/github-action@master
+          with:
+            github-token: ${{ secrets.GITHUB_TOKEN }}
+            path-to-lcov: tests/Warren.Core.Invoice.BDD.Tests/results/coverage.info
 
     build:
         runs-on: ubuntu-latest
