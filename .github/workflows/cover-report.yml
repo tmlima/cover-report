@@ -22,8 +22,8 @@ jobs:
           run: dotnet build --no-restore
         - name: Test
           run: 
-            dotnet test test/CoverReport.A.Tests/CoverReport.A.Tests.csproj \
-            /p:CollectCoverage=true \
+            dotnet test \
+            #/p:CollectCoverage=true \
             #/p:ExcludeByAttribute="CompilerGeneratedAttribute" \
             #/p:Exclude='[*.Tests.*]*' \
             #/p:CoverletOutput='../results/' \
