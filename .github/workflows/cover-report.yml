@@ -27,11 +27,11 @@ jobs:
             /p:CoverletOutput='../results/'
             /p:CoverletOutputFormat=lcov%2cjson
             #/p:MergeWith='../results/coverage.json' \
-        #- name: Code coverage to Coveralls
-        #  uses: coverallsapp/github-action@master
-        #  with:
-        #    github-token: TzbZN58vs7nfWE4d9oB7ypq1CQsioBZwJ
-        #    path-to-lcov: ./tests/Warren.Core.Invoice.BDD.Tests/results/coverage.info
+        - name: Code coverage to Coveralls
+          uses: coverallsapp/github-action@master
+          with:
+            github-token: TzbZN58vs7nfWE4d9oB7ypq1CQsioBZwJ
+            path-to-lcov: tests/results/coverage.info
 
     build:
         runs-on: ubuntu-latest
