@@ -32,7 +32,7 @@ jobs:
         - name: Code coverage to Coveralls
           uses: coverallsapp/github-action@master
           with:
-            github-token: ${{ secrets.GITHUB_TOKEN }}
+            github-token: TzbZN58vs7nfWE4d9oB7ypq1CQsioBZwJ
             path-to-lcov: tests/Warren.Core.Invoice.BDD.Tests/results/coverage.info
 
     build:
